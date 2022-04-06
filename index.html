@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>The Backyard Mechanic</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;600&family=Work+Sans:wght@500;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+    
+
+    <body>
+        
+        <section class="header">
+            <nav>
+                <a href="index.html" class="logo" ><img src="img/logo.png" height="400"</a>
+                <div class="nav-links" id="navLinks">
+                   <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="directions">Directions</a></li>
+                        <li><a href="contact">Contact Us</a></li>
+                    </ul>
+                </div>
+               <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+        </section>
+        
+        <div class="text-box">
+            <h1>One Stop For All Automotive Needs</h1>
+            <p>
+                We fix, replace and modify any vechile to your needs.<br />
+                From mechanical parts to the comfy seat you sit on and the way you want to style your ride.
+                <br />
+             <a href="" class="visit-btn">Visit us to know more</a>   
+            </p>
+        </div>
+
+<!---------JavaScript for toggle menu---------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+    </script>
+    </body>
+</html>
